@@ -1,11 +1,14 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.329
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TinyVM", "TinyVM\TinyVM.vcxproj", "{5FA12866-D457-43F8-AF6A-3A3B61657B70}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TVMLib", "TinyVM\TinyVM.vcxproj", "{5FA12866-D457-43F8-AF6A-3A3B61657B70}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TVInterpreter", "TVInterpreter\TVInterpreter.vcxproj", "{FE1433C7-4E1A-44A4-8472-8B43C3CC5680}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TVMInterpreter", "TVInterpreter\TVInterpreter.vcxproj", "{FE1433C7-4E1A-44A4-8472-8B43C3CC5680}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5FA12866-D457-43F8-AF6A-3A3B61657B70} = {5FA12866-D457-43F8-AF6A-3A3B61657B70}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
